@@ -177,7 +177,7 @@ h2
     background-position: center top;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("/images/chair1.png");
+    background-image: url("./images/chair1.png");
     opacity: 0;
     
   }
@@ -223,7 +223,7 @@ h2
   }
   
   .img-wrap.chair-6 {
-    background-image: url("/images/chair6.png");
+    background-image: url("./images/chair6.png");
   }
   
   .for-color-6:checked ~ .img-wrap.chair-6 {
