@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-fluid-main
+{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section
+{
+    
+    position: relative;
+    left: 60%;
+    top: 14%;
+    height: 100%;
+    width: 900px;
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+}
+h2
+{
+    letter-spacing:1px ;
+    
+}
+.accor-1{
+    word-wrap: break-word;
+    width: 50%;
+}
+.desc-sec
+{
+    margin-top: 1rem;
+}
+
+.info-wrap.mob-margin
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.05rem;
+}
+
+.accor-2
+{
+    display: flex;
+    gap: 1rem;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked)
+{
+    position: absolute;
+    display: none;
+}
+
+.color-btn ~label
+{
+    display: inline-block;
+    width: 40px;
+    background-color: aqua;
+   margin:1rem 0;
+    height: 40px;
+    cursor: pointer;
+}
+
+.color-btn:checked +label
+{
+    scale: 1.1;
+    border: 2px solid black;
+}
+.first-color
+{
+    
+    background-image: url("./images/color1.jpg");
+}
+.color-2
+{
+    
+    background-image: url("./images/color2.jpg");
+}
+.color-3
+{
+    
+    background-image: url("./images/color3.jpg");
+}
+.color-4
+{
+    
+    background-image: url("./images/color4.jpg");
+}
+.color-5
+{
+    
+    background-image: url("./images/color5.jpg");
+}
+.color-6
+{
+    
+    background-image: url("./images/color6.jpg");
+}
+
+.back-color
+{
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+    transition: all 250ms linear;
+    transition-delay: 300ms;
+    opacity: 0;
+}
+
+.for-color-1:checked ~ .back-color.chair1
+{
+    opacity: 1;
+}
+.back-color.chair-2
+{
+    background-image: linear-gradient(196deg, #4c4c4c, #262626);
+  opacity: 0;
+}
+
+.for-color-2:checked ~ .back-color.chair-2
+{
+    opacity: 1;
+}
+.back-color.chair-3 {
+    background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+    opacity: 0;
+  }
+  
+  .for-color-3:checked ~ .back-color.chair-3 {
+    opacity: 1;
+  }
+  .back-color.chair-4 {
+    background-image: linear-gradient(196deg, #97afc3, #6789a7);
+    opacity: 0;
+  }
+  
+  .for-color-4:checked ~ .back-color.chair-4 {
+    opacity: 1;
+  }
+  
+  .back-color.chair-5 {
+    background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+    opacity: 0;
+  }
+  
+  .for-color-5:checked ~ .back-color.chair-5 {
+    opacity: 1;
+  }
+  
+  .back-color.chair-6 {
+    background-image: linear-gradient(196deg, #aaadac, #838786);
+    opacity: 0;
+  }
+  
+  .for-color-6:checked ~ .back-color.chair-6 {
+    opacity: 1;
+  }
+  
+  .img-wrap {
+    position: fixed;
+    top: 4rem;
+    left: 15rem;
+    width: 500px;
+    height: 410px;
+    display: inline-block;
+    transition: all 550ms linear;
+    transition-delay: 100ms;
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("/images/chair1.png");
+    opacity: 0;
+    
+  }
+  .for-color-1:checked ~ .img-wrap.chair-1 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+  .img-wrap.chair-2 {
+    background-image: url("./images/chair2.png");
+  }
+  
+  .for-color-2:checked ~ .img-wrap.chair-2 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+  .img-wrap.chair-3 {
+    background-image: url("./images/chair3.png");
+  }
+  
+  .for-color-3:checked ~ .img-wrap.chair-3 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+  .img-wrap.chair-4 {
+    background-image: url("./images/chair4.png");
+  }
+  
+  .for-color-4:checked ~ .img-wrap.chair-4 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+  .img-wrap.chair-5 {
+    background-image: url("./images/chair5.png");
+  }
+  
+  .for-color-5:checked ~ .img-wrap.chair-5 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+  .img-wrap.chair-6 {
+    background-image: url("/images/chair6.png");
+  }
+  
+  .for-color-6:checked ~ .img-wrap.chair-6 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  .btn{
+    /* border: 1px solid black; */
+    width: 10rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 18, 18);
+    opacity: 0.8;
+    transition: all 500ms ease-out;
+    box-shadow: 2px 3px 8px black;
+    cursor: pointer;
+  }
+.btn a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.btn:hover
+{
+    opacity: 1;
+    box-shadow: none;
+}
+
+.for-color-2:checked~.btn
+{
+    background-color: #1a1a1a;
+}
+.for-color-3:checked~.btn
+{
+    background-color: #40566e;
+}
+.for-color-4:checked~.btn
+{
+    background-color: #5e89b2;
+}
+.for-color-5:checked~.btn
+{
+    background-color: #8c7f76;
+}
+.for-color-6:checked~.btn
+{
+    background-color: #5d6160;
+}
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0) rotate(-1deg);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0) rotate(2deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-3px, 0, 0) rotate(-3deg);
+    }
+    40%,
+    60% {
+      transform: translate3d(3px, 0, 0) rotate(3deg);
+    }
+  }
+
+.desc-btn +label
+{
+
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+ 
+.desc-btn +label:hover
+{
+    opacity: 0.8;
+}
+  
+#desc-1:checked+label
+{
+    opacity: 1;
+}
+#desc-2:checked+label
+{
+    opacity: 1;
+}
+  
+#desc-1:checked ~ .desc-sec.accor-1 {
+    display: flex;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+#desc-1:not(:checked) ~ .desc-sec.accor-1
+{
+    display: none
+}
+#desc-2:checked ~ .desc-sec.accor-2 {
+    display: flex;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+#desc-2:not(:checked) ~ .desc-sec.accor-2
+{
+    display: none
+}
+  
+  
+  
+  .info-wrap
+  {
+    margin-top: 1rem;
+   
+  }
+
+
+@media(max-width:1000px)
+{
+    .img-wrap
+    {
+        top: 4rem;
+        left: 1rem;
+    }
+}
